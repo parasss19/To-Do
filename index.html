@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do App</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="todo">
+
+            <h2>To-Do App <img src="images/icon.png" alt=""></h2>
+            <div class="row">
+                <input id="input-box" type="text" placeholder="Add Your Task">
+                <button onclick="addTask()"><img src="images/search_FILL0_wght400_GRAD-25_opsz40.png" alt=""></button>
+            </div>
+
+            <!-- we can insert the image in all tasks -->
+            <!-- <ul id="list">
+            <li><img src="images/unchecked.png" alt=""> Task1</li>           
+            <li><img src="images/unchecked.png" alt="">Task2</li>
+            <li><img src="images/unchecked.png" alt="">Task3</li>
+            </ul> -->
+
+            <!-- or we can use psuedo class ::before in our css   -->
+            <ul id="list"> </ul>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
