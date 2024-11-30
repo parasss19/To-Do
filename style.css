@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('images/To\ do\ img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .todo {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    background: #ffff;
+    padding: 20px 30px 60px;
+    border-radius: 12px;
+}
+
+.todo h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo h2 img {
+    width: 50px;
+}
+
+
+
+/* ^^^^^^^^^^^^^^^^^ BUTTON CSS (START) ^^^^^^^^^^^^^^^^^^^^^ */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 17px;
+    background: rgba(207, 207, 207, 0.4)
+}
+
+input {
+    flex: 1;
+    width: 70px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    background: transparent;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 13px 30px;
+    cursor: pointer;
+    background: #e83177;
+}
+
+button img {
+    width: 35px;
+}
+
+/* ^^^^^^^^^^^^^^^^^ BUTTON CSS (END) ^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^ TASK (START) ^^^^^^^^^^^^^^^^^^^^ */
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 20px 10px 20px 40px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+    top: 19px;
+    left: 6px;
+    background-position: center;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before {
+    background-image: url('images/checked.png');
+}
+
+
+
+
+/* ^^^^^^^^^^^^^^ for remove items (start) ^^^^^^^^^^^^^^^^ */
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 3px;
+    color: #fdf9f9;
+    font-size: 17px;
+    background: #2959ec;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: black;
+    color: white;
+}
+
+/* ^^^^^^^^^^^^^^ for remove items (End) ^^^^^^^^^^^^^^^^ */
+
+
+/* ^^^^^^^^^^^^^^^^ TASK (START) ^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^ MEDIA QUERY ^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+@media screen and (min-width:270px) and (max-width:640px) {
+    .container {
+        background-position: center;
+    }
+
+    .container .todo {
+        width: 87%;
+    }
+
+    button {
+        padding: 8px 22px;
+    }
+
+    button img {
+        width: 23px;
+    }
+
+    input {
+        width: 70px;
+        padding: 6px;
+
+    }
+}
