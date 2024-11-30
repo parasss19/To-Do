@@ -6,5 +6,3 @@
 # **Made With**
 [HTML](index.html)  [CSS](index.html)  [Javasript](app.js)
 
-# **Preview**
-https://parasss19.github.io/To-Do/
